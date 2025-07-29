@@ -8,6 +8,7 @@ This project analyzes a UK-based online retail store's transactions to uncover b
 ## Dashboard Preview
 
 ![Online Retail Sales Dashboard](./dashboard-screenshot.png)
+
 ---
 
 ## Dataset Overview
@@ -91,3 +92,4 @@ Tableau File: [`OnlineRetailDashboard.twb`](./OnlineRetailDashboard.twb)
 *Data Analyst*
 
 ---
+
