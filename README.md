@@ -1,17 +1,17 @@
 
-# 🧾 Online Retail Sales Analysis
+# Online Retail Sales Analysis
 
 This project analyzes a UK-based online retail store's transactions to uncover business insights such as top-selling products, monthly revenue trends, and purchasing patterns throughout the day. The full workflow was built using **MySQL** for data cleaning and transformation, and **Tableau** for interactive visualization.
 
 ---
 
-## 📸 Dashboard Preview
+## Dashboard Preview
 
 ![Online Retail Sales Dashboard](./Dashboard Screenshot.png)
 
 ---
 
-## 📊 Dataset Overview
+## Dataset Overview
 
 - **Source**: UCI Online Retail Dataset
 - **Format**: CSV with 500,000+ rows
@@ -19,7 +19,7 @@ This project analyzes a UK-based online retail store's transactions to uncover b
 
 ---
 
-## 🛠️ Tools Used
+## Tools Used
 
 - **SQL**: MySQL Workbench
 - **Data Cleaning & Analysis**: SQL Queries
@@ -28,24 +28,24 @@ This project analyzes a UK-based online retail store's transactions to uncover b
 
 ---
 
-## 🧹 Data Cleaning & Transformation
+## Data Cleaning & Transformation
 
 Steps were performed on a duplicated table (`transactions_2`) to preserve the raw data. Key tasks:
 
-- ✅ **Converted InvoiceDate** from string to proper `DATETIME`
-- ✅ **Removed Duplicates** using `ROW_NUMBER()` and subqueries
-- ✅ **Trimmed Text Fields** like Description, StockCode, and Country
-- ✅ **Removed**:
+- **Converted InvoiceDate** from string to proper `DATETIME`
+- **Removed Duplicates** using `ROW_NUMBER()` and subqueries
+- **Trimmed Text Fields** like Description, StockCode, and Country
+- **Removed**:
   - Rows with missing key fields (e.g., InvoiceNo, Quantity)
   - Negative or zero quantities and prices
   - Cancelled transactions (InvoiceNo starting with "C")
-- ✅ **Added Fields**:
+- **Added Fields**:
   - `Revenue` = Quantity × UnitPrice
   - `InvoiceYear`, `InvoiceMonth`, `InvoiceDay`
 
 ---
 
-## 📈 Analysis Performed in SQL
+## Analysis Performed in SQL
 
 - Top 10 **selling products** (by quantity)
 - Monthly **revenue trends**
@@ -55,20 +55,20 @@ Steps were performed on a duplicated table (`transactions_2`) to preserve the ra
 
 ---
 
-## 📊 Tableau Dashboard
+## Tableau Dashboard
 
 The cleaned dataset was visualized using Tableau. The dashboard includes:
 
-- 📦 Top Selling Products
-- 📆 Monthly Revenue Trends
-- 🌎 Revenue by Country
-- 🕒 Time-of-Day Trends
+- Top Selling Products
+- Monthly Revenue Trends
+- Revenue by Country
+- Time-of-Day Trends
 
-📂 Tableau File: [`OnlineRetailDashboard.twb`](./OnlineRetailDashboard.twb)
+Tableau File: [`OnlineRetailDashboard.twb`](./OnlineRetailDashboard.twb)
 
 ---
 
-## 🔍 Key Insights
+## Key Insights
 
 - Peak purchasing happens during **Afternoon hours**
 - Revenue is dominated by **a few high-performing products**
@@ -77,7 +77,7 @@ The cleaned dataset was visualized using Tableau. The dashboard includes:
 
 ---
 
-## ▶️ How to Run This Project
+## How to Run This Project
 
 1. Load the SQL file: [`online_retail_project.sql`](./online_retail_project.sql)
 2. Connect Tableau to your SQL database
@@ -86,7 +86,7 @@ The cleaned dataset was visualized using Tableau. The dashboard includes:
 
 ---
 
-## 👤 Author
+## Author
 
 **Angel Macedo**  
 *Data Analyst*
